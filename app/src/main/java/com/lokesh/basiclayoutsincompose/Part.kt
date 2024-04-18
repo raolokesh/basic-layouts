@@ -54,6 +54,7 @@ fun SearchBar(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .heightIn(min = 56.dp)
+            .padding(horizontal = 16.dp)
     )
 
 }
@@ -90,7 +91,7 @@ fun AlignYourBodyElement(
         )
     }
 }
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
+//@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
 @Composable
 private fun AlignYourBodyElementPreview() {
     AlignYourBodyElement(drawable = R.drawable.ab3_stretching, text = R.string.stretching)
@@ -128,7 +129,7 @@ fun FavoriteCollectionCard(
 
 
 
-@Preview
+//@Preview
 @Composable
 fun FavoriteCollectionCardPreview() {
     FavoriteCollectionCard(drawable = R.drawable.fc1_short_mantras, text = R.string.short_mantra,
